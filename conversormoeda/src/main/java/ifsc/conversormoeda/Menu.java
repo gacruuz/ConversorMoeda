@@ -74,11 +74,16 @@ public class Menu extends Application {
 		botaocotacao.setPrefWidth(60);
 		botaocotacao.setOnAction(e -> botaocotacaoopen(window));
 		
+		Button botaobolsa = new Button("Bolsa");
+		botaobolsa.setLayoutX(200);
+		botaobolsa.setLayoutY(160);
+		botaobolsa.setPrefWidth(60);
+		botaobolsa.setOnAction(e -> botaobolsaopen(window));
 		
 		
 		
 		pane2.setPrefSize(500, 400);
-		pane2.getChildren().addAll(botaodolar,botaoeuro,botaolibra,botaopeso,botaodeslogar, botaocotacao);
+		pane2.getChildren().addAll(botaodolar,botaoeuro,botaolibra,botaopeso,botaodeslogar, botaocotacao, botaobolsa);
 		Scene scene2 = new Scene(pane2);
 		window.setScene(scene2);
 		window.show();
@@ -136,6 +141,17 @@ public class Menu extends Application {
 		
 		try {
 			new Cotacao().start(window);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+private void botaobolsaopen(Stage window) {
+		
+		try {
+			new Bolsa().start(window);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
