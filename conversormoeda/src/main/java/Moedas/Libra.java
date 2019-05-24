@@ -31,7 +31,7 @@ public class Libra extends Application {
 		AnchorPane pane = new AnchorPane();
 		pane.setPrefSize(500, 400);
 		
-		BackgroundImage myBI= new BackgroundImage(new Image("file:C:\\Users\\CRUZ\\Desktop\\telalibra.png",0,0,false,true),
+		BackgroundImage myBI= new BackgroundImage(new Image("https://i.imgur.com/20D1SM3.png",0,0,false,true),
 		        BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
 		          BackgroundSize.DEFAULT);
 		//then you set to your node

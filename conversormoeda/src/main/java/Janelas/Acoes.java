@@ -28,7 +28,7 @@ public class Acoes extends Application {
 		botaovoltar.setLayoutY(30);
 		botaovoltar.setOnAction(e -> botaovoltaracao(window));
 		
-		BackgroundImage myBI= new BackgroundImage(new Image("file:C:\\Users\\CRUZ\\Desktop\\acoes.png",0,0,false,true),
+		BackgroundImage myBI= new BackgroundImage(new Image("https://i.imgur.com/BOXw1AR.png",0,0,false,true),
 		        BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
 		          BackgroundSize.DEFAULT);
 		//then you set to your node

@@ -33,7 +33,7 @@ public class Menu extends Application {
 		
 		AnchorPane pane2 = new AnchorPane();
 
-		BackgroundImage myBI= new BackgroundImage(new Image("file:C:\\Users\\CRUZ\\Desktop\\menu.png",0,0,false,true),
+		BackgroundImage myBI= new BackgroundImage(new Image("https://i.imgur.com/TzEnDcP.png",0,0,false,true),
 		        BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
 		          BackgroundSize.DEFAULT);
 		//then you set to your node
