@@ -21,6 +21,7 @@ import javafx.stage.Stage;
 
 public class Menu extends Application {
 
+	@SuppressWarnings("restriction")
 	@Override
 	public void start(Stage window) throws Exception {
 		// TODO Auto-generated method stub
@@ -67,7 +68,7 @@ public class Menu extends Application {
 		botaopeso.setPrefWidth(60);
 		botaopeso.setOnAction(e -> botaopesoopen(window));
 		
-		Button botaocotacao = new Button("Cotacao");
+		Button botaocotacao = new Button("Cambio");
 		botaocotacao.setLayoutX(200);
 		botaocotacao.setLayoutY(100);
 		botaocotacao.setPrefWidth(60);

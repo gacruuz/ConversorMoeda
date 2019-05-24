@@ -17,6 +17,7 @@ import javafx.scene.layout.BackgroundSize;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
+@SuppressWarnings("restriction")
 public class Main extends Application {
 
 	private AnchorPane pane;
