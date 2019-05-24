@@ -37,10 +37,10 @@ public class Menu extends Application {
 		
 		
 		
-		Button botaodeslogar = new Button("Voltar");
+		Button botaodeslogar = new Button("Deslogar");
 		botaodeslogar.setLayoutX(20);
 		botaodeslogar.setLayoutY(30);
-		
+		botaodeslogar.setOnAction(e -> botaodeslogaracao(window));
 		
 		
 		Button botaodolar = new Button("Dólar");
@@ -91,6 +91,16 @@ public class Menu extends Application {
 		
 	}
 	
+	private void botaodeslogaracao(Stage window) {
+		
+		try {
+			new Main().start(window);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
 	
 	private void botaodolaropen(Stage window) {
 		
