@@ -80,14 +80,33 @@ public class Menu extends Application {
 		botaobolsa.setPrefWidth(60);
 		botaobolsa.setOnAction(e -> botaobolsaopen(window));
 		
+		Button botaoacoes = new Button("Bolsa");
+		botaoacoes.setLayoutX(200);
+		botaoacoes.setLayoutY(220);
+		botaoacoes.setPrefWidth(60);
+		botaoacoes.setOnAction(e -> botaoacoesopen(window));
+		
 		
 		
 		pane2.setPrefSize(500, 400);
-		pane2.getChildren().addAll(botaodolar,botaoeuro,botaolibra,botaopeso,botaodeslogar, botaocotacao, botaobolsa);
+		pane2.getChildren().addAll(botaodolar,botaoeuro,botaolibra,botaopeso,botaodeslogar, botaocotacao, botaobolsa, botaoacoes);
 		Scene scene2 = new Scene(pane2);
 		window.setScene(scene2);
 		window.show();
 		
+		
+	}
+	
+	
+	
+	private void botaoacoesopen(Stage window) {
+		
+		try {
+			new Acoes().start(window);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 	
