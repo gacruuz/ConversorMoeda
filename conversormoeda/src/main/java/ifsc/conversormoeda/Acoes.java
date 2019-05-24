@@ -12,7 +12,7 @@ import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.stage.Stage;
 
-@SuppressWarnings("restriction")
+
 public class Acoes extends Application {
 
 	@Override

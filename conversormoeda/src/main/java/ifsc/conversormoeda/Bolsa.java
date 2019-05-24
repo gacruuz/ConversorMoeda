@@ -1,6 +1,6 @@
 package ifsc.conversormoeda;
 
-import Moedas.Dolar;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,7 +13,7 @@ import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
 import javafx.stage.Stage;
 
-@SuppressWarnings("restriction")
+
 public class Bolsa extends Application {
 
 	@Override

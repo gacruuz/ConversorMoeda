@@ -20,7 +20,7 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-@SuppressWarnings("restriction")
+
 public class Libra extends Application {
 
 	@Override
@@ -64,7 +64,7 @@ public class Libra extends Application {
 				
 				try {
 				float numero = Float.parseFloat(valor.getText());
-				numero = (float) (numero * 0.24);
+				numero = (float) (numero * 0.1952934);
 				System.out.println("Dolar: " + numero);
 				texto1.setText("VALOR CONVERTIDO: " + numero);
 				texto1.setFont(Font.font("Bebas", FontWeight.BOLD, 20));

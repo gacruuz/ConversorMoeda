@@ -9,14 +9,13 @@ import javafx.scene.layout.BackgroundImage;
 import javafx.scene.layout.BackgroundPosition;
 import javafx.scene.layout.BackgroundRepeat;
 import javafx.scene.layout.BackgroundSize;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class AlertaErro extends Application {
 
 	
 	
-	@SuppressWarnings("restriction")
+	
 	@Override
 	public void start(Stage window) throws Exception {
 		// TODO Auto-generated method stub

@@ -62,7 +62,7 @@ public class Euro extends Application{
 				
 				try {
 				float numero = Float.parseFloat(valor.getText());
-				numero = (float) (numero * 0.24);
+				numero = (float) (numero * 0.22143);
 				System.out.println("Dolar: " + numero);
 				texto1.setText("VALOR CONVERTIDO: " + numero);
 				texto1.setFont(Font.font("Bebas", FontWeight.BOLD, 20));
