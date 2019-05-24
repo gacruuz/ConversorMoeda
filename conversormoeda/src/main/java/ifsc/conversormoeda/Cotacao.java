@@ -1,7 +1,9 @@
 package ifsc.conversormoeda;
 
+import Moedas.Dolar;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Background;
@@ -27,11 +29,27 @@ public class Cotacao extends Application {
 		//then you set to your node
 		pane.setBackground(new Background(myBI));
 		
-		pane.getChildren().addAll();
+		Button botaovoltar = new Button("Voltar");
+		botaovoltar.setLayoutX(20);
+		botaovoltar.setLayoutY(30);
+		botaovoltar.setOnAction(e -> botaovoltaracao(window));
+		
+		pane.getChildren().addAll(botaovoltar);
 		Scene scene2 = new Scene(pane);
 		window.setScene(scene2);
 		window.show();
 		
 	}
 
+	private void botaovoltaracao(Stage window) {
+		
+		try {
+			new Menu().start(window);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 }
