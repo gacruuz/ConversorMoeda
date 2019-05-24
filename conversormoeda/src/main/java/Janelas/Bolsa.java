@@ -1,4 +1,4 @@
-package ifsc.conversormoeda;
+package Janelas;
 
 
 import javafx.application.Application;

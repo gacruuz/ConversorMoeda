@@ -1,9 +1,13 @@
-package ifsc.conversormoeda;
+package Janelas;
 
+import Janelas.Acoes;
+import Janelas.Bolsa;
+import Janelas.Cotacao;
 import Moedas.Dolar;
 import Moedas.Euro;
 import Moedas.Libra;
 import Moedas.Peso;
+import ifsc.conversormoeda.Main;
 import javafx.application.Application;
 
 import javafx.scene.Scene;

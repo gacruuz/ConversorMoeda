@@ -1,6 +1,7 @@
 package ifsc.conversormoeda;
 
 import Auxiliar.AlertaErro;
+import Janelas.Menu;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
