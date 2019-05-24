@@ -3,8 +3,6 @@ package Moedas;
 
 import Janelas.Menu;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -43,60 +41,24 @@ public class Dolar extends Application {
 		valor.setLayoutY(130);
 		valor.setPrefWidth(120);
 		
-		Button botaovoltar = new Button("Voltar");
-		botaovoltar.setLayoutX(20);
-		botaovoltar.setLayoutY(30);
-		
-		Button botao1 = new Button("Converter");
-		botao1.setLayoutX(197);
-		botao1.setLayoutY(180);
-		botao1.setPrefWidth(100);
-		
 		Text texto1 = new Text();
 		texto1.setText("");
 		texto1.setLayoutX(130);
 		texto1.setLayoutY(250);
 		
-		// -------- ACOES -------//
-		botao1.setOnAction(new	EventHandler<ActionEvent>()	{		
-			
-			@Override
-			
-			public	void	handle(ActionEvent	event)	{
-				
-				try {
-				float numero = Float.parseFloat(valor.getText());
-				numero = (float) (numero * 0.2480036);
-				System.out.println("Dolar: " + numero);
-				texto1.setText("VALOR CONVERTIDO: " + numero);
-				texto1.setFont(Font.font("Bebas", FontWeight.BOLD, 20));
-				}catch (Exception e) {
-					texto1.setText("Digite apenas valores");
-					texto1.setFont(Font.font("Bebas", FontWeight.BOLD, 20));
-				}
-				
-				
-			}
-			
-	    	});	
+		Button botaovoltar = new Button("Voltar");
+		botaovoltar.setLayoutX(20);
+		botaovoltar.setLayoutY(30);
+		botaovoltar.setOnAction(e -> botaovoltaracao(window));
 		
-		botaovoltar.setOnAction(new	EventHandler<ActionEvent>()	{		
-			
-			@Override
-			
-			public	void	handle(ActionEvent	event)	{
-							
-				try {
-					new Menu().start(window);
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-							
-			}
-			
-	    });	
+		Button botao1 = new Button("Converter");
+		botao1.setLayoutX(197);
+		botao1.setLayoutY(180);
+		botao1.setPrefWidth(100);
+		botao1.setOnAction(e -> botaoconverteracao(window, valor, texto1));
 		
+		
+	
 		
 		
 		pane.getChildren().addAll(valor, botao1, texto1, botaovoltar);
@@ -108,6 +70,34 @@ public class Dolar extends Application {
 		
 		
 	}
+	
+	private void botaoconverteracao(Stage window, TextField valor, Text texto1) {
+		
+		try {
+			float numero = Float.parseFloat(valor.getText());
+			numero = (float) (numero * 0.2480036);
+			System.out.println("Dolar: " + numero);
+			texto1.setText("VALOR CONVERTIDO: " + numero);
+			texto1.setFont(Font.font("Bebas", FontWeight.BOLD, 20));
+			}catch (Exception e) {
+				texto1.setText("Digite apenas valores");
+				texto1.setFont(Font.font("Bebas", FontWeight.BOLD, 20));
+			}
+		
+	}
+	
+	
+	private void botaovoltaracao(Stage window) {
+		
+		try {
+			new Menu().start(window);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 
 	
 }
