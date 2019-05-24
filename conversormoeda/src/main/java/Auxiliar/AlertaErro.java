@@ -16,6 +16,7 @@ public class AlertaErro extends Application {
 
 	
 	
+	@SuppressWarnings("restriction")
 	@Override
 	public void start(Stage window) throws Exception {
 		// TODO Auto-generated method stub
@@ -29,11 +30,9 @@ public class AlertaErro extends Application {
 		//then you set to your node
 		pane.setBackground(new Background(myBI));
 		
-		Text texto1 = new Text();
-		texto1.setLayoutX(100);
-		texto1.setLayoutY(100);
 		
-		pane.getChildren().addAll(texto1);
+		
+		pane.getChildren().addAll();
 		Scene scene2 = new Scene(pane);
 		window.setScene(scene2);
 		window.show();
